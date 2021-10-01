@@ -25,9 +25,10 @@ Room 295 in [1155 E 60th St](https://goo.gl/maps/7n7wDsd9mjnfRBtR8).
 
 - Register for this workshop. Due to the current public health crisis, all participants must register in advance using [this form.](https://forms.gle/dXpDDpmYrhmQKdmEA)
 - Please sign up for a free [RStudio Cloud account](https://rstudio.cloud).
+- Once you have created your RStudio Cloud account, [join the workshop organization.](https://rstudio.cloud/spaces/177434/join?access_code=cGV7c0V8%2Bpr0kFC5NkOX%2FgxNNhIm3PchWX1CjdBf)
 
 ## Links
 
 - RStudio Cloud workspace
-- Source materials for the workshop on GitHub
+- [Source materials for the workshop on GitHub](https://github.com/css-skills/dataviz)
 
