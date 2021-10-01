@@ -6,7 +6,8 @@ Data visualizations are an important tool for communicating scientific findings.
 
 ## Objectives
 
-- Produce scatter plots, boxplots using `ggplot2`
+- Produce scatter plots, boxplots, and barplots using `ggplot2`
+- Overlay multiple plot types on a single graph
 - Set universal plot settings
 - Describe faceting (or small multiples plots) and apply faceting in `ggplot2`
 - Modify the aesthetics of an existing `ggplot()` plot
