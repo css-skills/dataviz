@@ -669,7 +669,7 @@ ggplot(data = bechdel, mapping = aes(y = clean_test)) +
 <img src="dataviz_files/figure-gfm/ggplot-customization-font-size-1.png" width="80%" style="display: block; margin: auto;" />
 
 Note that it is also possible to change the fonts of your plots. If you
-are on Windows, you may have to install the [**`extrafont`**
+are on Windows, you may have to install the [`extrafont`
 package](https://github.com/wch/extrafont), and follow the instructions
 included in the README for this package.
 

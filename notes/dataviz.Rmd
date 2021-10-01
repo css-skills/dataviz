@@ -497,7 +497,7 @@ ggplot(data = bechdel, mapping = aes(y = clean_test)) +
 ```
 
 Note that it is also possible to change the fonts of your plots. If you are on
-Windows, you may have to install the [**`extrafont`**
+Windows, you may have to install the [`extrafont`
 package](https://github.com/wch/extrafont), and follow the instructions included
 in the README for this package.
 
