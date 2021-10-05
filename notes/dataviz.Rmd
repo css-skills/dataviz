@@ -82,7 +82,7 @@ Each chart built with `ggplot2` must include the following
 Thus, the template for graphics in ggplot2 is:
 
 ```r
-ggplot(data = <DATA>, mappping = aes(<MAPPINGS>)) +
+ggplot(data = <DATA>, mapping = aes(<MAPPINGS>)) +
   <GEOM_FUNCTION>()
 ```
 
@@ -501,7 +501,7 @@ Windows, you may have to install the [`extrafont`
 package](https://github.com/wch/extrafont), and follow the instructions included
 in the README for this package.
 
-With a larger font, the title also runs off. We can add "\n" in the string
+With a larger font, the title also runs off. We can add "\\n" in the string
 for the title to insert a new line:
 
 ```{r ggplot-customization-label-orientation}
@@ -550,7 +550,7 @@ ggplot(data = bechdel, mapping = aes(y = clean_test)) +
 With all of this information in hand, please take another five minutes to either improve one of the plots generated in this exercise or create a beautiful graph of your own. Use the RStudio [`ggplot2` cheat sheet](https://github.com/rstudio/cheatsheets/blob/master/data-visualization.pdf) for inspiration. Here are some ideas:
 
 - See if you can make the bars white with black outline.
-- Try using a different colour palette (see [http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/)).
+- Try using a different color palette (see [http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/)).
 
 # Saving graphs
 

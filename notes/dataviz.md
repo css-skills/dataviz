@@ -1,7 +1,7 @@
 Data visualization with `ggplot2`
 ================
 Benjamin Soltoff
-2021-10-01
+2021-10-05
 
 -   [Loading required items](#loading-required-items)
 -   [Plotting with `ggplot2`](#plotting-with-ggplot2)
@@ -105,7 +105,7 @@ Each chart built with `ggplot2` must include the following
 Thus, the template for graphics in ggplot2 is:
 
 ``` r
-ggplot(data = <DATA>, mappping = aes(<MAPPINGS>)) +
+ggplot(data = <DATA>, mapping = aes(<MAPPINGS>)) +
   <GEOM_FUNCTION>()
 ```
 
@@ -673,8 +673,8 @@ are on Windows, you may have to install the [`extrafont`
 package](https://github.com/wch/extrafont), and follow the instructions
 included in the README for this package.
 
-With a larger font, the title also runs off. We can add “” in the string
-for the title to insert a new line:
+With a larger font, the title also runs off. We can add “\\n” in the
+string for the title to insert a new line:
 
 ``` r
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
@@ -730,7 +730,7 @@ sheet](https://github.com/rstudio/cheatsheets/blob/master/data-visualization.pdf
 for inspiration. Here are some ideas:
 
 -   See if you can make the bars white with black outline.
--   Try using a different colour palette (see
+-   Try using a different color palette (see
     <http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/>).
 
 # Saving graphs
@@ -779,7 +779,7 @@ sessioninfo::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       America/Chicago             
-##  date     2021-10-01                  
+##  date     2021-10-05                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package      * version date       lib source        
