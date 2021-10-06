@@ -31,6 +31,12 @@ Room 295 in [1155 E 60th St](https://goo.gl/maps/7n7wDsd9mjnfRBtR8).
 
 - [Source materials for the workshop on GitHub](https://github.com/css-skills/dataviz)
 
+To download these materials to your local computer, use the code below:
+
+```r
+usethis::use_course("css-skills/dataviz")
+```
+
 ## Acknowledgments
 
 Workshop materials are derived from [R for Social Scientists](https://datacarpentry.org/r-socialsci/) licensed under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
