@@ -1,7 +1,7 @@
 Data visualization with `ggplot2`
 ================
 Benjamin Soltoff
-2021-10-05
+2021-10-06
 
 -   [Loading required items](#loading-required-items)
 -   [Plotting with `ggplot2`](#plotting-with-ggplot2)
@@ -557,7 +557,7 @@ plot:
 
 ``` r
 ggplot(data = bechdel, mapping = aes(x = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated))
 ```
 
@@ -571,7 +571,7 @@ conventional x.
 
 ``` r
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated))
 ```
 
@@ -584,7 +584,7 @@ individually determine the range for each panel:
 
 ``` r
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x")
 ```
 
@@ -636,7 +636,7 @@ Now, let’s change names of axes to something more informative than
 
 ``` r
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -654,7 +654,7 @@ improved by increasing the font size:
 
 ``` r
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -678,7 +678,7 @@ string for the title to insert a new line:
 
 ``` r
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -707,7 +707,7 @@ theme_bw_custom <- theme_bw() +
         plot.title = element_text(hjust = 0.5))
 
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -748,7 +748,7 @@ Make sure to have the `fig_output/` folder in your working directory.
 
 ``` r
 my_plot <- ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -779,7 +779,7 @@ sessioninfo::session_info()
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       America/Chicago             
-##  date     2021-10-05                  
+##  date     2021-10-06                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package      * version date       lib source        

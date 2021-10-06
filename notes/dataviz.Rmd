@@ -406,7 +406,7 @@ Rather than creating a single plot with side-by-side bars for each film rating, 
 
 ```{r barplot-faceting}
 ggplot(data = bechdel, mapping = aes(x = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated))
 ```
 
@@ -414,7 +414,7 @@ Note that due to the smaller panels, the text labels on the x-axis are overlappi
 
 ```{r barplot-faceting-flip}
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated))
 ```
 
@@ -422,7 +422,7 @@ We also can see that there are very few G-rated films in the dataset. This cause
 
 ```{r barplot-faceting-flip-freex}
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x")
 ```
 
@@ -469,7 +469,7 @@ Now, let's change names of axes to something more informative than 'village' and
 
 ```{r ggplot-customization}
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -484,7 +484,7 @@ The axes have more informative names, but their readability can be improved by i
 
 ```{r ggplot-customization-font-size}
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -506,7 +506,7 @@ for the title to insert a new line:
 
 ```{r ggplot-customization-label-orientation}
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -533,7 +533,7 @@ theme_bw_custom <- theme_bw() +
         plot.title = element_text(hjust = 0.5))
 
 ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
@@ -562,7 +562,7 @@ Make sure to have the `fig_output/` folder in your working directory.
 
 ```r
 my_plot <- ggplot(data = bechdel, mapping = aes(y = clean_test)) +
-  geom_bar(position = "dodge") +
+  geom_bar() +
   facet_wrap(facets = vars(rated), scales = "free_x") +
   theme_bw() +
   labs(
